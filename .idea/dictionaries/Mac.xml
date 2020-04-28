@@ -2,6 +2,9 @@
   <dictionary name="Mac">
     <words>
       <w>autoprefixer</w>
+      <w>browsersync</w>
+      <w>cssnano</w>
+      <w>imagemin</w>
     </words>
   </dictionary>
 </component>

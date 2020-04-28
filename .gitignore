@@ -244,6 +244,8 @@ fabric.properties
 # modules.xml
 # .idea/misc.xml
 # *.ipr
+.idea/dictionaries/Mac.xml
+
 
 # Sonarlint plugin
 .idea/**/sonarlint/
