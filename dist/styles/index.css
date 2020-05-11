@@ -12,8 +12,8 @@ body {
 header.b-page-header {
   background: url("../assets/images/bg-header-mobile.svg") #5ba4a4;
   height: 8rem;
-  width: 100%;
   margin-bottom: 4rem;
+  width: 100%;
 }
 
 .container {
@@ -31,6 +31,8 @@ header.b-page-header {
   }
 }
 
+/* Job Offer Main Block
+   ========================================================================== */
 .b-job-offer {
   background: white;
   border-radius: 0.5rem;
@@ -42,93 +44,111 @@ header.b-page-header {
   position: relative;
 }
 
-.b-job-offer .b-details {
-  color: grey;
-  font-weight: 400;
-}
-
-.b-job-offer .company-image img {
-  height: 4rem;
-  left: 1.5rem;
-  position: absolute;
-  top: -2rem;
-}
-
-.b-job-offer .job-offer {
-  display: flex;
-  align-items: center;
-}
-
-.b-job-offer .offer-details {
-  margin-top: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.b-job-offer .offer-details .details-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0;
-}
-
-.b-job-offer .offer-details .details-header .company-name {
-  color: #5ba4a4;
-  font-weight: 700;
-  margin: 0;
-}
-
-.b-job-offer .job-title {
-  font-size: 1.2rem;
-  margin: 1.2rem 0;
-}
-
-.b-job-offer .offer-requirements {
-  border-top: 0.01rem solid grey;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: left;
-  padding: 0;
-  padding-top: 1rem;
-}
-
-.b-job-offer .offer-requirements li {
-  background: #effafa;
-  border-radius: 0.2rem;
-  color: #5ba4a4;
-  font-weight: 600;
-  list-style-type: none;
-  margin: 0.5rem 0;
-  margin-right: 1.5rem;
-  padding: 0.5rem;
-}
-
-.b-featured-offer {
-  border-left: 0.4rem solid #5ba4a4;
-}
-
 @media screen and (min-width: 900px) {
   .b-job-offer {
     align-items: center;
     flex-direction: row;
     margin: 2rem 0;
   }
-  .b-job-offer .offer-details {
-    margin-top: 0;
-  }
-  .b-job-offer .offer-requirements {
-    border-top: none;
-  }
-  .b-job-offer .company-image img {
+}
+
+.b-job-offer--featured {
+  border-left: 0.4rem solid #5ba4a4;
+}
+
+.job-offer {
+  align-items: center;
+  display: flex;
+}
+
+/* Job Offer Main Block: Content
+   ========================================================================== */
+.company-image img {
+  height: 4rem;
+  left: 1.5rem;
+  position: absolute;
+  top: -2rem;
+}
+
+@media screen and (min-width: 900px) {
+  .company-image img {
     height: 6rem;
-    position: initial;
     margin-right: 2rem;
+    position: initial;
   }
 }
 
-.flag--new, .flag--featured {
+/*
+*   Details section: START
+*/
+.job-offer__details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+@media screen and (min-width: 900px) {
+  .job-offer__details {
+    margin-top: 0;
+  }
+}
+
+.details__header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.company-name {
+  color: #5ba4a4;
+  font-weight: 700;
+  margin: 0;
+}
+
+/*
+*   Details section: END
+*/
+.job-title {
+  font-size: 1.2rem;
+  margin: 1.2rem 0;
+}
+
+.b-details {
+  color: grey;
+  font-weight: 400;
+}
+
+/* Job Offer Main Block: Tags
+   ========================================================================== */
+.job-tags {
+  border-top: 0.01rem solid grey;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  padding: 1rem 0 0;
+}
+
+@media screen and (min-width: 900px) {
+  .job-tags {
+    border-top: none;
+  }
+}
+
+.job-tags li {
+  background: #effafa;
+  border-radius: 0.2rem;
+  color: #5ba4a4;
+  font-weight: 600;
+  list-style-type: none;
+  margin: 0.5rem 1.5rem 0.5rem 0;
+  padding: 0.5rem;
+}
+
+.flag--new,
+.flag--featured {
   align-self: center;
   border-radius: 1.5rem;
   color: white;

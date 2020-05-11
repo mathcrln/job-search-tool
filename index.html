@@ -3,27 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- displays site properly based on user's device -->
-
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/assets/images/favicon-32x32.png">
     <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;500;600;700&display=swap" rel="stylesheet">
-
     <title>Frontend Mentor | Job Listings</title>
     <link href="./dist/styles/index.css" rel="stylesheet">
 </head>
-<body>
-<header class="b-page-header">
 
-</header>
+<body>
+<header class="b-page-header"></header>
 <div class="container">
-    <div class="b-job-offer b-featured-offer">
+    <div class="b-job-offer b-job-offer--featured">
         <div class="job-offer">
             <div class="company-image">
                 <img src="./src/assets/images/photosnap.svg" alt="Photosnap Logo">
             </div>
-            <div class="offer-details">
-                <div class="details-header">
+            <div class="job-offer__details">
+                <div class="details__header">
                     <p class="company-name">Photosnap</p>
                     <p class="flag--new">NEW!</p>
                     <p class="flag--featured">FEATURED</p>
@@ -36,7 +31,7 @@
                 </div>
             </div>
         </div>
-        <ul class="offer-requirements">
+        <ul class="job-tags">
             <li>Frontend</li>
             <li>Senior</li>
             <li>HTML</li>
@@ -46,13 +41,13 @@
     </div>
 </div>
 <div class="container">
-    <div class="b-job-offer b-featured-offer">
+    <div class="b-job-offer b-job-offer--featured">
         <div class="job-offer">
             <div class="company-image">
                 <img src="./src/assets/images/manage.svg" alt="Manage Logo">
             </div>
-            <div class="offer-details">
-                <div class="details-header">
+            <div class="job-offer__details">
+                <div class="details__header">
                     <p class="company-name">Photosnap</p>
                     <p class="flag--new">NEW!</p>
                     <p class="flag--featured">FEATURED</p>
@@ -65,7 +60,7 @@
                 </div>
             </div>
         </div>
-        <ul class="offer-requirements">
+        <ul class="job-tags">
             <li>Full Stack</li>
             <li>Mid weight</li>
             <li>Python</li>

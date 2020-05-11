@@ -1,26 +1,23 @@
+@import '._rem-func';
+
 body{
     background: $bgColor;
 }
 
 header.b-page-header{
     background: url("../assets/images/bg-header-mobile.svg") $bg;
-    height: 8rem;
+    height: rem(128px);
+    margin-bottom: rem(64px);
     width: 100%;
-    margin-bottom: 4rem;
-
+    @include query-desktops {
+        background: url("../assets/images/bg-header-desktop.svg") $bg;
+    }
 }
 
 .container{
     margin: auto;
     width: 90%;
-}
-
-@media screen and (min-width: 900px){
-    header.b-page-header{
-        background: url("../assets/images/bg-header-desktop.svg") $bg;
-    }
-
-    .container{
+    @include query-desktops {
         margin: auto;
         width: 80%;
     }

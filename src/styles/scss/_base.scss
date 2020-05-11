@@ -8,9 +8,12 @@ $veryDarkCyan: hsl(180, 14%, 20%);
 
 // Fonts Size & Family
 html, body{
-  font-size: 15px;
-  font-family: Spartan, Arial, Helvetica, sans-serif;
-
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font: {
+    family: Spartan, Arial, Helvetica, sans-serif;
+    size: 15px;
+  }
   margin: 0;
   padding: 0;
 }

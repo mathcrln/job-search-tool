@@ -1,20 +1,24 @@
-.flag--new, .flag--featured{
-    align-self: center;
+@import '._rem-func';
 
-    border-radius: 1.5rem;
+.flag--new,
+.flag--featured {
+    align-self: center;
+    border-radius: rem(24px);
     color: white;
-    font-size: 0.7rem;
-    font-weight: 600;
-    margin: 0 0.5rem;
-    max-width: 6rem;
-    padding: 0.5rem;
+    font: {
+        size: rem(11.2px);
+        weight: 600;
+    }
+    margin: 0 rem(8px);
+    max-width: rem(96px);
+    padding: rem(8px);
     text-align: center;
 }
 
-.flag--featured{
+.flag--featured {
     background: $veryDarkCyan;
 }
 
-.flag--new{
+.flag--new {
     background: $bg;
 }
