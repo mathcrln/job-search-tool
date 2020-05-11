@@ -1,7 +1,7 @@
 const jofOffers = [
   {
     company: "Photosnap",
-    title: "Senior Frontend Developper",
+    title: "Senior Frontend Developer",
     featured: true,
     new: true,
     region: "USA only",
@@ -11,11 +11,11 @@ const jofOffers = [
   },
   {
     company: "Manage",
-    title: "Fullstack Developer",
+    title: "Full stack Developer",
     featured: true,
     new: true,
     region: "Remote",
-    requirements: ["Fullstack", "Midweight", "Python", "React"],
+    requirements: ["Full stack", "Mid weight", "Python", "React"],
     timeSincePosted: 1,
     typeOfContract: "Part Time"
   },
