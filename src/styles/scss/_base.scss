@@ -1,3 +1,16 @@
-body {
-  color: blue;
+
+// Colors
+$bgColor: hsl(180, 52%, 96%);
+$bg: hsl(180, 29%, 50%);
+$filterTablet: hsl(180, 31%, 95%);
+$darkCyan: hsl(180, 8%, 52%);
+$veryDarkCyan: hsl(180, 14%, 20%);
+
+// Fonts Size & Family
+html, body{
+  font-size: 15px;
+  font-family: Spartan, Arial, Helvetica, sans-serif;
+
+  margin: 0;
+  padding: 0;
 }

@@ -1,0 +1,27 @@
+body{
+    background: $bgColor;
+}
+
+header.b-page-header{
+    background: url("../assets/images/bg-header-mobile.svg") $bg;
+    height: 8rem;
+    width: 100%;
+    margin-bottom: 4rem;
+
+}
+
+.container{
+    margin: auto;
+    width: 90%;
+}
+
+@media screen and (min-width: 900px){
+    header.b-page-header{
+        background: url("../assets/images/bg-header-desktop.svg") $bg;
+    }
+
+    .container{
+        margin: auto;
+        width: 80%;
+    }
+}

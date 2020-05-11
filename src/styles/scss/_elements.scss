@@ -1,0 +1,20 @@
+.flag--new, .flag--featured{
+    align-self: center;
+
+    border-radius: 1.5rem;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 600;
+    margin: 0 0.5rem;
+    max-width: 6rem;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.flag--featured{
+    background: $veryDarkCyan;
+}
+
+.flag--new{
+    background: $bg;
+}
