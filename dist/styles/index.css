@@ -1,6 +1,8 @@
 html, body {
-  font-size: 15px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
   font-family: Spartan, Arial, Helvetica, sans-serif;
+  font-size: 15px;
   margin: 0;
   padding: 0;
 }
@@ -16,15 +18,18 @@ header.b-page-header {
   width: 100%;
 }
 
+@media screen and (min-width: 900px) {
+  header.b-page-header {
+    background: url("../assets/images/bg-header-desktop.svg") #5ba4a4;
+  }
+}
+
 .container {
   margin: auto;
   width: 90%;
 }
 
 @media screen and (min-width: 900px) {
-  header.b-page-header {
-    background: url("../assets/images/bg-header-desktop.svg") #5ba4a4;
-  }
   .container {
     margin: auto;
     width: 80%;

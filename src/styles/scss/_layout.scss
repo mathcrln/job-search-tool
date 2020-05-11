@@ -1,4 +1,5 @@
-@import '._rem-func';
+@import 'rem-func';
+@import 'media-queries';
 
 body{
     background: $bgColor;
