@@ -10,7 +10,7 @@
     position: relative;
     // TODO: Add box Shadow to block
 
-    .b-informations{
+    .b-details{
         color: grey;
         font-weight: 400;
     }
@@ -20,17 +20,17 @@
         position: absolute;
         top: -2rem;
     }
-    .informations{
+    .job-offer{
         display: flex;
         align-items: center;
         // TODO : Improve the spacing of the sub infos (review HTML)
     }    
-    .offer-informations{
+    .offer-details{
         margin-top: 1.5rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        .informations-header{
+        .details-header{
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -82,7 +82,7 @@
         flex-direction: row;
         margin: 2rem 0;
 
-        .offer-informations{
+        .offer-details{
             margin-top: 0;
         }
         .offer-requirements {

@@ -42,7 +42,7 @@ header.b-page-header {
   position: relative;
 }
 
-.b-job-offer .b-informations {
+.b-job-offer .b-details {
   color: grey;
   font-weight: 400;
 }
@@ -54,26 +54,26 @@ header.b-page-header {
   top: -2rem;
 }
 
-.b-job-offer .informations {
+.b-job-offer .job-offer {
   display: flex;
   align-items: center;
 }
 
-.b-job-offer .offer-informations {
+.b-job-offer .offer-details {
   margin-top: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.b-job-offer .offer-informations .informations-header {
+.b-job-offer .offer-details .details-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0;
 }
 
-.b-job-offer .offer-informations .informations-header .company-name {
+.b-job-offer .offer-details .details-header .company-name {
   color: #5ba4a4;
   font-weight: 700;
   margin: 0;
@@ -115,7 +115,7 @@ header.b-page-header {
     flex-direction: row;
     margin: 2rem 0;
   }
-  .b-job-offer .offer-informations {
+  .b-job-offer .offer-details {
     margin-top: 0;
   }
   .b-job-offer .offer-requirements {

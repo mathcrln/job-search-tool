@@ -4,6 +4,7 @@
       <w>autoprefixer</w>
       <w>browsersync</w>
       <w>cssnano</w>
+      <w>googleapis</w>
       <w>imagemin</w>
       <w>photosnap</w>
     </words>
