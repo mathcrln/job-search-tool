@@ -1,97 +1,134 @@
-.b-job-offer{
-    // align-items: center;
-    background: white;
-    border-radius: 0.5rem;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    margin: 3.5rem 0;
-    padding: 1.5rem;
-    position: relative;
-    // TODO: Add box Shadow to block
+@import 'media-queries';
+@import 'rem-func';
 
-    .b-details{
-        color: grey;
-        font-weight: 400;
-    }
-    .company-image img{
-        height: 4rem;
-        left: 1.5rem;
-        position: absolute;
-        top: -2rem;
-    }
-    .job-offer{
-        display: flex;
-        align-items: center;
-        // TODO : Improve the spacing of the sub infos (review HTML)
-    }    
-    .offer-details{
-        margin-top: 1.5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        .details-header{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin: 0;
-            .company-name{
-                color: $bg;
-                font-weight: 700;
-                margin: 0;
-            }
-        }
-    }
+/* Job Offer Main Block
+   ========================================================================== */
 
-    .job-title{
-        font-size: 1.2rem;
-        margin: 1.2rem 0;
-    }
-
-    .offer-requirements {
-        border-top: 0.01rem solid grey;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: left;
-        padding: 0;
-        padding-top: 1rem;
-        li{
-            background: $bgColor;
-            border-radius: 0.2rem;
-            color: $bg;
-            font-weight: 600;
-            list-style-type: none;
-            margin: 0.5rem 0;
-            margin-right: 1.5rem;
-            padding: 0.5rem;
-        }
-    }
-
-    
+.b-job-offer {
+  // align-items: center;
+  background: white;
+  border-radius: rem(5px);
+  box-shadow: 0 12px 16px rgba(93,165,164,.2);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: rem(60px) 0;
+  padding: rem(24px);
+  position: relative;
+  @include query-desktops {
+    align-items: center;
+    flex-direction: row;
+    margin: rem(32px) 0;
+    padding: rem(18px) rem(18px) rem(24px) rem(18px);
+  }
 }
 
-.b-featured-offer{
-    border-left: 0.4rem solid $bg;
+.b-job-offer--featured {
+  border-left: rem(5px) solid $bg;
 }
 
-@media screen and (min-width: 900px){
+.job-offer {
+  align-items: center;
+  display: flex;
+  margin:  rem(5px) rem(15px);
+}
 
-    .b-job-offer{
-        align-items: center;
-        flex-direction: row;
-        margin: 2rem 0;
+/* Job Offer Main Block: Content
+   ========================================================================== */
 
-        .offer-details{
-            margin-top: 0;
-        }
-        .offer-requirements {
-            border-top: none;
-        }
-        .company-image img{
-            height: 6rem;
-            position: initial;
-            margin-right: 2rem;
-        }
+.company-image {
+  @include query-desktops {
+    margin: {
+      left: rem(5px);
+      top: rem(13px);
     }
+  }
+  img {
+    height: rem(64px);
+    left: rem(24px);
+    position: absolute;
+    top: rem(-32px);
+    @include query-desktops {
+      height: rem(94px);
+      margin-right: rem(24px);
+      position: initial;
+    }
+  }
+}
+
+/*
+*   Details section: START
+*/
+
+.job-offer__details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: rem(24px);
+  @include query-desktops {
+    margin-top: rem(3px);
+  }
+}
+
+.details__header {
+  align-items: center;
+  display: flex;
+  margin: 0;
+}
+
+.company-name {
+  color: $bg;
+  display: inline-block;
+  font-weight: 700;
+  letter-spacing: rem(-0.6px);
+  margin: 0 rem(14px) 0 0;
+}
+
+/*
+*   Details section: END
+*/
+
+.job-title {
+  font-size: rem(19.2px);
+  margin: rem(14px) 0 rem(12px);
+}
+
+.b-details {
+  color: grey;
+  display: flex;
+  font-weight: 400;
+  justify-content: space-between;
+  letter-spacing: rem(-0.6px);
+  @include query-desktops {
+    margin-bottom: rem(-3px);
+  }
+}
+
+/* Job Offer Main Block: Tags
+   ========================================================================== */
+
+.job-tags {
+  border-top: rem(0.16px) solid grey;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin-right: rem(5px);
+  padding: rem(16px) 0 0;
+  @include query-desktops {
+    border-top: none;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+  li {
+    background: $bgColor;
+    border-radius: rem(3.2px);
+    color: $bg;
+    font-size: rem(13.5px);
+    font-weight: 700;
+    list-style-type: none;
+    margin: rem(8px) rem(19px) rem(14px) 0;
+    padding: rem(10px) rem(10px) rem(8px);
+  }
 }

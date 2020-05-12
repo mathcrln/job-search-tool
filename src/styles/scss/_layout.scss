@@ -1,27 +1,25 @@
+@import 'rem-func';
+@import 'media-queries';
+
 body{
     background: $bgColor;
 }
 
 header.b-page-header{
     background: url("../assets/images/bg-header-mobile.svg") $bg;
-    height: 8rem;
+    height: rem(165px);
+    margin-bottom: rem(81px);
     width: 100%;
-    margin-bottom: 4rem;
-
-}
-
-.container{
-    margin: auto;
-    width: 90%;
-}
-
-@media screen and (min-width: 900px){
-    header.b-page-header{
+    @include query-desktops {
         background: url("../assets/images/bg-header-desktop.svg") $bg;
     }
+}
 
-    .container{
+.b-offer-wrapper{
+    margin: auto;
+    width: 90%;
+    @include query-desktops {
         margin: auto;
-        width: 80%;
+        width: 77%;
     }
 }

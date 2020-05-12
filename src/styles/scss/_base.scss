@@ -6,11 +6,24 @@ $filterTablet: hsl(180, 31%, 95%);
 $darkCyan: hsl(180, 8%, 52%);
 $veryDarkCyan: hsl(180, 14%, 20%);
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 // Fonts Size & Family
 html, body{
-  font-size: 15px;
-  font-family: Spartan, Arial, Helvetica, sans-serif;
-
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font: {
+    family: Spartan, Arial, Helvetica, sans-serif;
+    size: 15px;
+  }
   margin: 0;
   padding: 0;
 }
