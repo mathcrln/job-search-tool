@@ -7,8 +7,8 @@ body{
 
 header.b-page-header{
     background: url("../assets/images/bg-header-mobile.svg") $bg;
-    height: rem(128px);
-    margin-bottom: rem(64px);
+    height: rem(165px);
+    margin-bottom: rem(81px);
     width: 100%;
     @include query-desktops {
         background: url("../assets/images/bg-header-desktop.svg") $bg;
@@ -20,6 +20,6 @@ header.b-page-header{
     width: 90%;
     @include query-desktops {
         margin: auto;
-        width: 80%;
+        width: 77%;
     }
 }

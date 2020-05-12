@@ -3,15 +3,15 @@
 .flag--new,
 .flag--featured {
     align-self: center;
-    border-radius: rem(24px);
+    border-radius: rem(26px);
     color: white;
     font: {
-        size: rem(11.2px);
-        weight: 600;
+        size: rem(11.5px);
+        weight: 700;
     }
-    margin: 0 rem(8px);
+    margin: 0 rem(5px);
     max-width: rem(96px);
-    padding: rem(8px);
+    padding: rem(8px) rem(9px) rem(4px);
     text-align: center;
 }
 
