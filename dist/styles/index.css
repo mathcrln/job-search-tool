@@ -34,13 +34,13 @@ header.b-page-header {
   }
 }
 
-.container {
+.b-offer-wrapper {
   margin: auto;
   width: 90%;
 }
 
 @media screen and (min-width: 900px) {
-  .container {
+  .b-offer-wrapper {
     margin: auto;
     width: 77%;
   }
