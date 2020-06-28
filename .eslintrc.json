@@ -1,8 +1,5 @@
 {
-  "extends": [
-    "airbnb",
-    "prettier"
-  ],
+  "extends": ["airbnb", "prettier"],
   "rules": {
     "no-console": "off",
     "linebreak-style": 0,
@@ -11,11 +8,13 @@
       {
         "trailingComma": "es5",
         "singleQuote": true,
-        "printWidth": 120
+        "printWidth": 120,
+        "endOfLine": "auto"
       }
     ]
   },
-  "plugins": [
-    "prettier"
-  ]
+  "plugins": ["prettier"],
+  "env": {
+    "browser": true
+  }
 }
