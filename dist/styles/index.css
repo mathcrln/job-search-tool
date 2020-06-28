@@ -1,3 +1,5 @@
+/* --------------------------------------- */
+/* --------------------------------------- */
 html {
   box-sizing: border-box;
 }
@@ -8,7 +10,9 @@ html {
   box-sizing: inherit;
 }
 
-html, body {
+/* --------------------------------------- */
+html,
+body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-family: Spartan, Arial, Helvetica, sans-serif;
@@ -107,10 +111,14 @@ header.b-page-header {
 *   Details section: START
 */
 .job-offer__details {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   margin-top: 1.5rem;
+  min-width: 17.5rem;
+  max-width: 100%;
 }
 
 @media screen and (min-width: 900px) {
@@ -207,4 +215,16 @@ header.b-page-header {
 
 .flag--new {
   background: #5ba4a4;
+}
+
+body.dark-mode {
+  background: #1c2029;
+}
+
+body.dark-mode .b-job-offer {
+  background: #252b43;
+}
+
+body.dark-mode .job-title {
+  color: white;
 }

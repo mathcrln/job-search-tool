@@ -8,13 +8,14 @@
   // align-items: center;
   background: white;
   border-radius: rem(5px);
-  box-shadow: 0 12px 16px rgba(93,165,164,.2);
+  box-shadow: 0 12px 16px rgba(93, 165, 164, .2);
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   margin: rem(60px) 0;
   padding: rem(24px);
   position: relative;
+
   @include query-desktops {
     align-items: center;
     flex-direction: row;
@@ -30,7 +31,7 @@
 .job-offer {
   align-items: center;
   display: flex;
-  margin:  rem(5px) rem(15px);
+  margin: rem(5px) rem(15px);
 }
 
 /* Job Offer Main Block: Content
@@ -43,11 +44,13 @@
       top: rem(13px);
     }
   }
+
   img {
     height: rem(64px);
     left: rem(24px);
     position: absolute;
     top: rem(-32px);
+
     @include query-desktops {
       height: rem(94px);
       margin-right: rem(24px);
@@ -61,10 +64,15 @@
 */
 
 .job-offer__details {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   margin-top: rem(24px);
+  min-width: 17.5rem;
+  max-width: 100%;
+
   @include query-desktops {
     margin-top: rem(3px);
   }
@@ -99,6 +107,8 @@
   font-weight: 400;
   justify-content: space-between;
   letter-spacing: rem(-0.6px);
+
+
   @include query-desktops {
     margin-bottom: rem(-3px);
   }
@@ -106,7 +116,6 @@
 
 /* Job Offer Main Block: Tags
    ========================================================================== */
-
 .job-tags {
   border-top: rem(0.16px) solid grey;
   display: flex;
@@ -115,12 +124,15 @@
   justify-content: left;
   margin-right: rem(5px);
   padding: rem(16px) 0 0;
+
   @include query-desktops {
     border-top: none;
   }
+
   &:hover {
     cursor: pointer;
   }
+
   li {
     background: $bgColor;
     border-radius: rem(3.2px);

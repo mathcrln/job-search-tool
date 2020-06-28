@@ -1,0 +1,11 @@
+body.dark-mode {
+    background: $dark-background;
+
+    .b-job-offer {
+        background: $dark-card-bg;
+    }
+
+    .job-title {
+        color: white;
+    }
+}

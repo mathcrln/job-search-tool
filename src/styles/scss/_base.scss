@@ -1,11 +1,18 @@
-
 // Colors
+/* --------------------------------------- */
 $bgColor: hsl(180, 52%, 96%);
 $bg: hsl(180, 29%, 50%);
 $filterTablet: hsl(180, 31%, 95%);
 $darkCyan: hsl(180, 8%, 52%);
 $veryDarkCyan: hsl(180, 14%, 20%);
+// Dark Theme
+$veryDarkBluebg: hsl(230, 17%, 14%);
+$header-color-dark: #20222f;
+$dark-background: #1c2029;
+$dark-card-bg: #252b43;
 
+// Elements Reset
+/* --------------------------------------- */
 html {
   box-sizing: border-box;
 }
@@ -17,13 +24,17 @@ html {
 }
 
 // Fonts Size & Family
-html, body{
+/* --------------------------------------- */
+html,
+body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+
   font: {
     family: Spartan, Arial, Helvetica, sans-serif;
     size: 15px;
   }
+
   margin: 0;
   padding: 0;
 }
